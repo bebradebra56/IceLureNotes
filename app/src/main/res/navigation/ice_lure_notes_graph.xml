@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ice_lure_notes_graph"
+    app:startDestination="@id/iceLureNotesLoadFragment">
+
+    <fragment
+        android:id="@+id/iceLureNotesLoadFragment"
+        android:name="com.icelurenote.sotfap.jio.presentation.ui.load.IceLureNotesLoadFragment"
+        android:label="IceLureNotesLoadFragment" >
+        <action
+            android:id="@+id/action_iceLureNotesLoadFragment_to_iceLureNotesV"
+            app:destination="@id/iceLureNotesV"
+            app:popUpTo="@id/ice_lure_notes_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/iceLureNotesV"
+        android:name="com.icelurenote.sotfap.jio.presentation.ui.view.IceLureNotesV"
+        android:label="IceLureNotesV" />
+</navigation>
