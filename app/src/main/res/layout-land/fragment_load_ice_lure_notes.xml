@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:constraint_referenced_ids="iceLureNotesNotifText,iceLureNotesGrandButton,iceLureNotesSkipButton,iceLureNotesNotifText2,iceLureNotesNotiBack" />
+        app:constraint_referenced_ids="iceLureNotesNotifText,iceLureNotesGrandButton,iceLureNotesSkipButton,iceLureNotesNotifText2,iceLureNotesNotiBack,iceLureNotesLogo" />
 
     <ImageView
         android:id="@+id/iceLureNotesNotiBack"
@@ -84,7 +84,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ice_lure_notes_land_back" />
+        app:srcCompat="@drawable/ice_lure_land_back" />
+
+    <ImageView
+        android:id="@+id/iceLureNotesLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/iceLureNotesNotifText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        app:srcCompat="@drawable/ice_lure_logo" />
 
     <TextView
         android:id="@+id/iceLureNotesNotifText"
